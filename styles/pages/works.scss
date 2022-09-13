@@ -1,0 +1,100 @@
+.works__tabs-item {
+  background-color: transparent;
+
+  &:hover {
+    color: black;
+  }
+
+  &.active {
+    background-color: red;
+    color: white;
+  }
+}
+
+.works {
+  &__item {
+    transition: all 300ms ease-in;
+
+    &:hover {
+      .works__details {
+        opacity: 1;
+      }
+
+      .works__details-header {
+        animation-name: worksDetailsHeader;
+        animation-duration: 400ms;
+
+        @keyframes worksDetailsHeader {
+          from {
+            transform: translateY(3rem);
+            opacity: 0;
+          }
+
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+
+        }
+      }
+
+      .works__see {
+        animation-name: worksSee;
+        animation-duration: 500ms;
+
+        @keyframes worksSee {
+          from {
+            transform: translateY(3rem);
+            opacity: 0;
+          }
+
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+
+        }
+      }
+    }
+  }
+
+  &__details {
+    transition: all 200ms ease-out;
+
+    &-header {
+      transform: translateX(0);
+
+    }
+  }
+}
+
+.works__see {
+  transform: translateY(0);
+
+  .bi {
+    color: red;
+  }
+
+  &:hover {
+    span {
+      color: black;
+    }
+  }
+}
+
+.works__isSuccess {
+  &-item {
+    box-shadow: 0 5px 15px -10px black;
+
+    &:hover {
+      box-shadow: 0 5px 16px -10px black;
+    }
+  }
+
+  &-icon {
+    .bi {
+      font-size: 2rem;
+      color: rgb(177, 177, 177);
+    }
+  }
+}

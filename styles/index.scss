@@ -1,0 +1,92 @@
+.mobile {
+  display: none;
+
+  .bi {
+    color: #ffffff;
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width:1023px) {
+  .mobile {
+    display: block;
+  }
+}
+
+.services__card {
+  background-color: transparent;
+  transition: all 400ms ease-in-out;
+  box-shadow: 0 0 0 0 black;
+
+  &:hover {
+    background-color: red;
+    box-shadow: 0 0 18px -11px black;
+
+    .bi,
+    .services__card-titile,
+    .services__card-text {
+      color: white;
+    }
+
+  }
+
+  &-header {
+    .bi {
+      font-size: 1.5rem;
+      color: red;
+      transition: all 400ms ease-in-out;
+    }
+  }
+
+  &-titile {
+    color: black;
+    transition: all 400ms ease-in-out;
+  }
+
+  &-text {
+    color: rgb(92, 92, 92);
+    transition: all 400ms ease-in-out;
+  }
+}
+
+.title {
+  position: relative;
+  padding: 0;
+  padding-bottom: 10px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-flex;
+    width: 40px;
+    height: 4px;
+    background-color: red;
+  }
+}
+
+.simplebar-track {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  height: 90%;
+  top: 5% !important;
+  translate: -10px;
+
+}
+
+.simplebar-scrollbar {
+  cursor: pointer;
+
+  &::before {
+    cursor: pointer;
+    opacity: 0.8;
+    background: white !important;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 1 !important;
+    }
+  }
+}

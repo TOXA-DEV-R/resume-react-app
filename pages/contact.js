@@ -1,0 +1,86 @@
+/** @format */
+
+import React from "react";
+import SimpleBar from "simplebar-react";
+
+const Contact = () => {
+  return (
+    <SimpleBar className="w-full h-full rounded-2xl contact shadow-md shadow-gray-400 pt-12 pb-12 pl-10 pr-10 overflow-scroll overflow-x-hidden">
+      <h2 className="text-2xl font-medium title works__title">Get in touch</h2>
+
+      <div className="contact__inputs flex justify-between mt-20">
+        <div className="w-3/12">
+          <div className="flex">
+            <span className="icon">
+              <i className="bi bi-telephone"></i>
+            </span>
+            <div className="ml-3">
+              <span className="text-md text-black font-medium">Phone</span>
+              <p className="text-sm text-gray-400 font-normal mt-1">
+                +7781001543
+              </p>
+            </div>
+          </div>
+
+          <div className="flex mt-7">
+            <span className="icon">
+              <i className="bi bi-envelope"></i>
+            </span>
+            <div className="ml-3">
+              <span className="text-md text-black font-medium">
+                Email address
+              </span>
+              <p className="text-sm text-gray-400 font-normal mt-1">
+                hello@bako.com
+              </p>
+            </div>
+          </div>
+
+          <div className="flex mt-7">
+            <span className="icon">
+              <i className="bi bi-geo-alt"></i>
+            </span>
+            <div className="ml-3">
+              <span className="text-md text-black font-medium">Location</span>
+              <p className="text-sm text-gray-400 font-normal mt-1">
+                West Palm Beach, 4669 Travis Street
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <form className="w-8/12">
+          <div className="grid grid-cols-2 gap-x-5">
+            <input
+              type="text"
+              placeholder="Your name"
+              className="border rounded-lg pl-3 pr-3 h-[2.5rem] outline-none hover:border-gray-400 placeholder:text-sm placeholder:text-gray-400 text-sm text-gray-700 font-normal transition-all duration-300"
+            />
+            <input
+              type="text"
+              placeholder="Email address"
+              className="border rounded-lg pl-3 pr-3 h-[2.5rem] outline-none hover:border-gray-400 placeholder:text-sm placeholder:text-gray-400 text-sm text-gray-700 font-normal transition-all duration-300"
+            />
+          </div>
+          <input
+            type="text"
+            placeholder="Subject"
+            className="border rounded-lg pl-3 pr-3 h-[2.5rem] outline-none hover:border-gray-400 placeholder:text-sm placeholder:text-gray-400 text-sm text-gray-700 font-normal w-full mt-5 transition-all duration-300"
+          />
+          <textarea
+            placeholder="Message..."
+            className="border rounded-lg p-3 h-[7rem] outline-none hover:border-gray-400 placeholder:text-sm placeholder:text-gray-400 text-sm text-gray-700 font-normal w-full mt-5 transition-all duration-300 resize-none"
+          ></textarea>
+          <button
+            type="submit"
+            className="bg-[#f85a5a] rounded-lg h-[2.3rem] pl-4 pr-4 text-white mt-5 text-sm hover:bg-blue-600 translate-y-0 transition-all duration-300 hover:-translate-y-1"
+          >
+            Submit Message
+          </button>
+        </form>
+      </div>
+    </SimpleBar>
+  );
+};
+
+export default Contact;
