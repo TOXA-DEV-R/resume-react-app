@@ -10,13 +10,17 @@ const About = () => {
     <SimpleBar className="w-full h-full rounded-2xl about shadow-md shadow-gray-400 pt-12 pb-12 pl-10 pr-10 overflow-scroll overflow-x-hidden">
       <h2 className="text-2xl font-medium title">About me</h2>
       <div className="about-section w-full mt-20 mb-20">
-        <div className="wrap w-full flex flex-wrap">
+        <div className="wrap w-full flex flex-col md:flex-row items-center md:flex-wrap">
           <div className="w-2/12">
             <div className="about__image max-w-[12rem] w-full max-h-[12rem] h-auto">
               <Image
                 src="/assets/images/about_img.png"
                 alt="My image"
-                className="rounded-full block w-full h-full"
+                width={166}
+                height={166}
+                className="rounded-full"
+                objectFit="cover"
+                priority
               />
             </div>
           </div>
@@ -60,13 +64,13 @@ const About = () => {
               <button className="flex items-center justify-center pt-2 pb-2 pr-3 pl-3 rounded-xl border border-white text-base text-white bg-red-500 hover:bg-blue-600 hover:border-transparent transition hover:duration-300">
                 <span className="icon mr-2">
                   <i className="bi bi-cloud-download"></i>
-                </span>{" "}
+                </span>
                 Download CV
               </button>
               <button className="flex items-center justify-center pt-2 pb-2 pr-3 pl-3 rounded-xl border border-white text-base text-white ml-3 bg-blue-600 hover:bg-red-500 hover:border-transparent transition hover:duration-300">
                 <span className="icon mr-2">
                   <i className="bi bi-envelope"></i>
-                </span>{" "}
+                </span>
                 Hire Me
               </button>
             </div>
@@ -83,70 +87,61 @@ const About = () => {
           Vokalia and Consonantia, there live the blind texts. Separated they
           live in Bookmarksgrove right at the coast of the Semantics
         </p>
-        <div className="about__skills-list grid grid-cols-5 gap-6 mt-10">
-          <AboutSkillsItem title="Javascript">
-            <Image
-              src="/assets/icon/icons8-javascript.svg"
-              alt="Javascript"
-              className="max-w-[2rem]"
-            />
-          </AboutSkillsItem>
-          <AboutSkillsItem title="Css">
-            <Image
-              src="/assets/icon/icons8-css3.svg"
-              alt="Css"
-              className="max-w-[2rem]"
-            />
-          </AboutSkillsItem>
-          <AboutSkillsItem title="html">
-            <Image
-              src="/assets/icon/icons8-html-5.svg"
-              alt="html"
-              className="max-w-[2rem]"
-            />
-          </AboutSkillsItem>
-          <AboutSkillsItem title="react.js">
-            <Image
-              src="/assets/icon/icons8-react.svg"
-              alt="react.js"
-              className="max-w-[2rem]"
-            />
-          </AboutSkillsItem>
-          <AboutSkillsItem title="Next.js">
-            <Image
-              src="/assets/icon/nextjs-icon.svg"
-              alt="Next.js"
-              className="max-w-[2.5rem]"
-            />
-          </AboutSkillsItem>
-          <AboutSkillsItem title="vue.js">
-            <Image
-              src="/assets/icon/icons8-vue-js.svg"
-              alt="Vue.js"
-              className="max-w-[2rem]"
-            />
-          </AboutSkillsItem>
-          <AboutSkillsItem title="Nuxt.js">
-            <Image
-              src="/assets/icon/nuxtjs.svg"
-              alt="Next.js"
-              className="max-w-[4rem]"
-            />
-          </AboutSkillsItem>
-          <AboutSkillsItem title="Dart" iconClassName="s">
-            <Image
-              src="/assets/icon/dart.svg"
-              alt="Dart"
-              className="max-w-[2rem]"
-            />
-          </AboutSkillsItem>
-          <AboutSkillsItem title="Flutter">
-            <Image
-              src="/assets/icon/icons8-flutter.svg"
-              alt="Flutter"
-              className="max-w-[2rem]"
-            />
-          </AboutSkillsItem>
+        <div className="about__skills-list grid xl:grid-cols-5 md:grid-cols-4 grid-cols-2 gap-6 mt-10">
+          <AboutSkillsItem
+            title="Javascript"
+            imgSrc="/assets/icon/icons8-javascript.svg"
+            widthImage={48}
+            heightImage={48}
+          ></AboutSkillsItem>
+          <AboutSkillsItem
+            title="Css"
+            imgSrc="/assets/icon/icons8-css3.svg"
+            widthImage={48}
+            heightImage={48}
+          ></AboutSkillsItem>
+          <AboutSkillsItem
+            title="html"
+            imgSrc="/assets/icon/icons8-html-5.svg"
+            widthImage={48}
+            heightImage={48}
+          ></AboutSkillsItem>
+          <AboutSkillsItem
+            title="react.js"
+            imgSrc="/assets/icon/icons8-react.svg"
+            widthImage={40}
+            heightImage={40}
+          ></AboutSkillsItem>
+          <AboutSkillsItem
+            title="Next.js"
+            imgSrc="/assets/icon/nextjs-icon.svg"
+            widthImage={50}
+            heightImage={25}
+          ></AboutSkillsItem>
+          <AboutSkillsItem
+            title="vue.js"
+            imgSrc="/assets/icon/icons8-vue-js.svg"
+            widthImage={45}
+            heightImage={40}
+          ></AboutSkillsItem>
+          <AboutSkillsItem
+            title="Nuxt.js"
+            imgSrc="/assets/icon/nuxtjs.svg"
+            widthImage={65}
+            heightImage={35}
+          ></AboutSkillsItem>
+          <AboutSkillsItem
+            title="Dart"
+            imgSrc="/assets/icon/dart.svg"
+            widthImage={36}
+            heightImage={36}
+          ></AboutSkillsItem>
+          <AboutSkillsItem
+            title="Flutter"
+            imgSrc="/assets/icon/icons8-flutter.svg"
+            widthImage={36}
+            heightImage={30}
+          ></AboutSkillsItem>
         </div>
       </div>
     </SimpleBar>

@@ -12,6 +12,10 @@ const NavbarTop = () => {
             src="/assets/images/about_img.png"
             alt="Avatar"
             className="inline-block h-6/12 w-6/12 rounded-full object-cover"
+            width={114}
+            height={114}
+            objectFit="cover"
+            priority
           />
         </div>
         <h2 className="text-xl text-white font-bold mt-3 navbar__name">
