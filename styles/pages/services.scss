@@ -1,0 +1,35 @@
+.services__card {
+  background-color: transparent;
+  transition: all 400ms ease-in-out;
+  box-shadow: 0 0 0 0 black;
+
+  &:hover {
+    background-color: red;
+    box-shadow: 0 0 18px -11px black;
+
+    .bi,
+    .services__card-titile,
+    .services__card-text {
+      color: white;
+    }
+
+  }
+
+  &-header {
+    .bi {
+      font-size: 1.5rem;
+      color: red;
+      transition: all 400ms ease-in-out;
+    }
+  }
+
+  &-titile {
+    color: black;
+    transition: all 400ms ease-in-out;
+  }
+
+  &-text {
+    color: rgb(92, 92, 92);
+    transition: all 400ms ease-in-out;
+  }
+}

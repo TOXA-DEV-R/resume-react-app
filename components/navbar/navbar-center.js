@@ -24,7 +24,7 @@ const NavbarCenter = () => {
           className="navbar__item mt-2 mb-2 translate-x-0 hover:translate-x-3 transition-all duration-500"
           key={indx}
         >
-          <Link href={item.path} passHref>
+          <Link href={item.path}>
             <a
               className={`flex items-center ${
                 asPath == item.path ? "active" : ""

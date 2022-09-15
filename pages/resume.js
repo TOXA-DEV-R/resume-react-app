@@ -1,11 +1,10 @@
 /** @format */
 
-import React from "react";
 import SimpleBar from "simplebar-react";
 
 const Resume = () => {
   return (
-    <SimpleBar className="w-full h-full rounded-2xl services shadow-md shadow-gray-400 pt-12 pb-12 pl-10 pr-10 overflow-scroll overflow-x-hidden">
+    <SimpleBar className="w-full h-full rounded-2xl services shadow-md shadow-gray-400 pt-12 pb-12 pl-3 pr-3 sm:pl-5 sm:pr-8 lg:pl-10 lg:pr-10 overflow-scroll overflow-x-hidden">
       <h2 className="text-2xl font-medium title services__title">Experience</h2>
       <div className="services__timeline mt-40">
         <div className="services__timeline-entry flex h-[10rem]">

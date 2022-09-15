@@ -5,7 +5,7 @@ import SimpleBar from "simplebar-react";
 
 const Contact = () => {
   return (
-    <SimpleBar className="w-full h-full rounded-2xl contact shadow-md shadow-gray-400 pt-12 pb-12 pl-10 pr-10 overflow-scroll overflow-x-hidden">
+    <SimpleBar className="w-full h-full rounded-2xl contact shadow-md shadow-gray-400 pt-12 pb-12 pl-3 pr-3 sm:pl-5 sm:pr-8 lg:pl-10 lg:pr-10 overflow-scroll overflow-x-hidden">
       <h2 className="text-2xl font-medium title works__title">Get in touch</h2>
 
       <div className="contact__inputs flex justify-between mt-20">

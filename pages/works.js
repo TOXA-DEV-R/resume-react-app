@@ -47,7 +47,7 @@ const Works = ({ data = [] }) => {
   }, [data, tabsListControl]);
 
   return (
-    <SimpleBar className="w-full h-full rounded-2xl works shadow-md shadow-gray-400 pt-12 pb-12 pl-10 pr-10 overflow-scroll overflow-x-hidden">
+    <SimpleBar className="w-full h-full rounded-2xl works shadow-md shadow-gray-400 pt-12 pb-12 pl-3 pr-3 sm:pl-5 sm:pr-8 lg:pl-10 lg:pr-10 overflow-scroll overflow-x-hidden">
       <h2 className="text-2xl font-medium title works__title">Portfolio</h2>
       {/* <!-- works-tabs / --> */}
       <ul className="works__tabs mt-16 flex">

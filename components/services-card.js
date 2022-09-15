@@ -4,7 +4,7 @@ import React from "react";
 
 const ServicesCard = ({ iconclass, title, text }) => {
   return (
-    <div className="services__card border rounded-lg pt-6 pb-6 pr-6 pl-6">
+    <div className="services__card border rounded-lg pt-6 pb-6 pr-6 pl-6 max-w-[20rem] sm:max-w-[100%] w-full">
       <div className="services__card-header flex justify-center">
         <i className={`bi ${iconclass}`}></i>
       </div>

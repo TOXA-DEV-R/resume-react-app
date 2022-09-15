@@ -25,7 +25,7 @@ const Navbar = () => {
   });
   return (
     <header
-      className={`max-w-[16rem] header w-full max-h-[38.75rem] h-full pt-4 pb-4 pl-2 transition-all duration-300 ${
+      className={`max-w-[16rem] header w-full lg:max-h-[38.75rem] h-full pt-4 pb-4 pl-2 transition-all duration-300 ${
         isMobileOpen ? "show-header max-w-full" : ""
       }`}
       onClick={() => {
@@ -39,7 +39,7 @@ const Navbar = () => {
             dispatch(mobileClose());
           }}
         >
-          <i class="bi bi-x-lg"></i>
+          <i className="bi bi-x-lg"></i>
         </button>
       )}
 
