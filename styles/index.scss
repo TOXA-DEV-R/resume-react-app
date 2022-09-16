@@ -5,6 +5,13 @@
 @import './components/mobile.scss';
 @import './pages/services.scss';
 @import './components/loadign.scss';
+@import './pages/resume.scss';
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 
 .title {
   position: relative;

@@ -50,7 +50,7 @@ const Works = ({ data = [] }) => {
     <SimpleBar className="w-full h-full rounded-2xl works shadow-md shadow-gray-400 pt-12 pb-12 pl-3 pr-3 sm:pl-5 sm:pr-8 lg:pl-10 lg:pr-10 overflow-scroll overflow-x-hidden">
       <h2 className="text-2xl font-medium title works__title">Portfolio</h2>
       {/* <!-- works-tabs / --> */}
-      <ul className="works__tabs mt-16 flex">
+      <ul className="works__tabs mt-16 flex sm:flex-nowrap flex-wrap sm:justify-start justify-center">
         {tabList.map(({ label, id, content }) => (
           <li
             className={`works__tabs-item font-normal text-sm uppercase flex justify-center items-center rounded-md text-gray-500 pt-2 pb-2 pr-3 pl-3 cursor-pointer transition-all duration-200 mr-3 ${
@@ -65,16 +65,21 @@ const Works = ({ data = [] }) => {
       </ul>
       {/* <!-- / works-tabs --> */}
       {/* <!-- works-wrapper / --> */}
-      <div className="works__wrapper mt-6 grid grid-cols-3 gap-4">
+      <div className="works__wrapper mt-6 grid lg:grid-cols-3 sm:grid-cols-2 gap-[2rem] sm:gap-4">
         {state.length > 0 &&
           state.map(({ id, title, text, imageSrc, link }) => (
             <div
-              className="works__item w-full h-[10rem] rounded-md overflow-hidden relative border border-gray-300"
+              className="works__item w-full sm:h-[10rem] rounded-md overflow-hidden relative border border-gray-300"
               style={tabsListClasses}
               key={id}
             >
-              <div className="works__image rounded-md overflow-hidden w-full h-full">
-                <Image src={imageSrc} alt={title} width={322} height={160} />
+              <div className="works__image rounded-md overflow-hidden">
+                <Image
+                  src={imageSrc}
+                  alt={title}
+                  layout="fill"
+                  objectFit="cover"
+                />
               </div>
               <div className="works__details absolute top-0 left-0 w-full h-full bg-[#ff6565e7] p-6 flex flex-col justify-between opacity-0">
                 <div className="works__details-header transition-all duration-600">

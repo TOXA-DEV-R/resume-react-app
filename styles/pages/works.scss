@@ -99,3 +99,37 @@
     }
   }
 }
+
+
+@media screen and (max-width:587px) {
+  .works__tabs-item {
+    &:last-of-type {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width:409px) {
+  .works__tabs-item {
+    &:nth-of-type(3) {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width:639px) {
+  .works__wrapper {
+    justify-items: center;
+  }
+
+  .works__item {
+    max-width: 400px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .works__item {
+    height: 170px;
+  }
+}

@@ -39,11 +39,12 @@ const Layout = ({ children }) => {
   });
 
   useEffect(() => {
-    const handleComplete = (url) =>
-      url === router.asPath &&
+    const handleComplete = (url) => {
       setTimeout(() => {
         controlNavbar();
       }, 0);
+    };
+
     router.events.on("routeChangeComplete", handleComplete);
     router.events.on("routeChangeError", handleComplete);
 
