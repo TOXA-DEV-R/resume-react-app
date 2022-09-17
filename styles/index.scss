@@ -1,4 +1,4 @@
-@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css');
+// @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css');
 @import './layout/navbar.scss';
 @import './pages/home.scss';
 @import './pages/works.scss';
@@ -11,77 +11,77 @@
 *,
 ::after,
 ::before {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .title {
-  position: relative;
-  padding: 0;
-  padding-bottom: 10px;
+    position: relative;
+    padding: 0;
+    padding-bottom: 10px;
 
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: inline-flex;
-    width: 40px;
-    height: 4px;
-    background-color: red;
-  }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: inline-flex;
+        width: 40px;
+        height: 4px;
+        background-color: red;
+    }
 }
 
 @media screen and (max-width:767px) {
-  .title {
-    text-align: center;
+    .title {
+        text-align: center;
 
-    &::after {
-      left: 50%;
-      transform: translateX(-50%);
+        &::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
-  }
 }
 
 
 .simplebar-track {
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  height: 90%;
-  top: 5% !important;
-  translate: -10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    height: 90%;
+    top: 5% !important;
+    translate: -10px;
 
 }
 
 .simplebar-scrollbar {
-  cursor: pointer;
-
-  &::before {
     cursor: pointer;
-    opacity: 0.8;
-    background: white !important;
-  }
 
-  &:hover {
     &::before {
-      opacity: 1 !important;
+        cursor: pointer;
+        opacity: 0.8;
+        background: white !important;
     }
-  }
+
+    &:hover {
+        &::before {
+            opacity: 1 !important;
+        }
+    }
 }
 
 
 [data-simplebar="init"] {
-  scrollbar-width: 0;
+    scrollbar-width: 0;
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
 }
 
 
 @media screen and (max-width:1023px) {
-  // .next-wrap {
-  //   display: grid;
-  //   grid-template-rows: 95px auto;
-  // }
+    // .next-wrap {
+    //   display: grid;
+    //   grid-template-rows: 95px auto;
+    // }
 }
