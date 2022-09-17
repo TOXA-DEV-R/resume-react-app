@@ -4,8 +4,14 @@ import Image from "next/image";
 import React from "react";
 import SimpleBar from "simplebar-react";
 import AboutSkillsItem from "../components/about-skillsItem";
+import useDownloader from "react-use-downloader";
+import Link from "next/link";
 
 const About = () => {
+  const { download } = useDownloader();
+  const fileUrl = "/assets/files/Bobojonov Tohir.pdf";
+  const filename = "Tohir Bobojonov resume.pdf";
+
   return (
     <SimpleBar className="w-full h-full rounded-2xl about shadow-md shadow-gray-400 pt-12 pb-12 pl-3 pr-3 sm:pl-5 sm:pr-8 lg:pl-10 lg:pr-10 overflow-scroll overflow-x-hidden">
       <h2 className="text-2xl font-medium title">About me</h2>
@@ -26,13 +32,24 @@ const About = () => {
           </div>
           <div className="w-full xl:w-10/12 pl-5 pr-5">
             <h2 className="about__greeting text-black text-3xl font-bold text-center md:text-start mt-3 md:mt-0">
-              Hello,
+              {`Hello, I'm a Frontend-developer.`}
             </h2>
             <p className="text-sx text-black opacity-40 mt-6 font-normal md:text-start text-center">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Necessitatibus, quibusdam nesciunt veniam recusandae id dicta fuga
-              ut adipisci voluptatum itaque corporis sapiente cupiditate
-              consectetur?
+              {`I'm`} a Frontend-developer{" "}
+              <a
+                href="https://codeweb.uz/"
+                target="_blank"
+                rel="noreferrer"
+                className="underline"
+              >
+                Codeweb
+              </a>
+              . I have more than 3 month Of Experience. I am passionate about
+              building excellent software that improves the lives of those
+              around me. I specialize in creating web application for clients
+              ranging from individuals and small-businesses. What would you do
+              if you had a Frontend-developer expert available at your
+              fingertips?
             </p>
             <div className="about__infos mt-6 grid grid-cols-1 xl:grid-cols-2 gap-2 xl:gap-0">
               <p className="md:text-start text-center">
@@ -61,18 +78,23 @@ const About = () => {
               </p>
             </div>
             <div className="about__getInfos flex flex-col items-center sm:flex-row justify-center md:justify-start md:items-start  mt-5">
-              <button className="flex items-center justify-center pt-2 pb-2 pr-3 pl-3 rounded-xl border border-white text-base text-white bg-red-500 hover:bg-blue-600 hover:border-transparent transition hover:duration-300">
+              <button
+                className="flex items-center justify-center pt-2 pb-2 pr-3 pl-3 rounded-xl border border-white text-base text-white bg-red-500 hover:bg-blue-600 hover:border-transparent transition hover:duration-300"
+                onClick={() => download(fileUrl, filename)}
+              >
                 <span className="icon mr-2">
                   <i className="bi bi-cloud-download"></i>
                 </span>
                 Download CV
               </button>
-              <button className="flex items-center justify-center pt-2 pb-2 pr-3 pl-3 rounded-xl border border-white text-base text-white sm:ml-3 sm:mt-0 mt-4 bg-blue-600 hover:bg-red-500 hover:border-transparent transition hover:duration-300">
-                <span className="icon mr-2">
-                  <i className="bi bi-envelope"></i>
-                </span>
-                Hire Me
-              </button>
+              <Link href="/contact">
+                <a className="flex items-center justify-center pt-2 pb-2 pr-3 pl-3 rounded-xl border border-white text-base text-white sm:ml-3 sm:mt-0 mt-4 bg-blue-600 hover:bg-red-500 hover:border-transparent transition hover:duration-300">
+                  <span className="icon mr-2">
+                    <i className="bi bi-envelope"></i>
+                  </span>
+                  Hire Me
+                </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -80,13 +102,9 @@ const About = () => {
 
       <div className="about__skills">
         <h2 className="text-2xl font-medium title about__skills-title md:text-start text-center">
-          My skills
+          IT Skills
         </h2>
-        <p className="text-sx text-black opacity-40 mt-6 font-normal md:text-start text-center">
-          Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia, there live the blind texts. Separated they
-          live in Bookmarksgrove right at the coast of the Semantics
-        </p>
+        <p className="text-sx text-black opacity-40 mt-6 font-normal md:text-start text-center"></p>
         <div className="about__skills-list grid xl:grid-cols-5 md:grid-cols-4 grid-cols-2 gap-4 sm:gap-6 mt-10">
           <AboutSkillsItem
             title="Javascript"

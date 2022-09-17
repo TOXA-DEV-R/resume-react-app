@@ -4,3 +4,10 @@
     font-size: 20px;
   }
 }
+
+@media screen and (max-width:450px) {
+  .contact__input-top {
+    grid-template-columns: auto !important;
+    gap: 1.25rem;
+  }
+}

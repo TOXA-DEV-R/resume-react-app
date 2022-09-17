@@ -70,15 +70,20 @@ const Works = ({ data = [] }) => {
           state.map(({ id, title, text, imageSrc, link }) => (
             <div
               className="works__item w-full sm:h-[10rem] rounded-md overflow-hidden relative border border-gray-300"
-              style={tabsListClasses}
+              style={{
+                ...tabsListClasses,
+              }}
               key={id}
             >
               <div className="works__image rounded-md overflow-hidden">
                 <Image
                   src={imageSrc}
                   alt={title}
-                  layout="fill"
+                  width={320}
+                  height={158}
+                  layout="responsive"
                   objectFit="cover"
+                  priority
                 />
               </div>
               <div className="works__details absolute top-0 left-0 w-full h-full bg-[#ff6565e7] p-6 flex flex-col justify-between opacity-0">
@@ -108,7 +113,7 @@ const Works = ({ data = [] }) => {
       {/* <!-- / works-wrapper --> */}
 
       {/* <!-- works IsSuccess / --> */}
-      <div className="works__isSuccess grid grid-cols-3 gap-10 mt-16">
+      <div className="works__isSuccess grid md:grid-cols-3 -md:grid-cols-2 -sm:grid-cols-1 gap-10 mt-16">
         <div className="works__isSuccess-item h-[10rem] rounded-lg border border-transparent transition-all duration-300 hover:border-gray-200">
           <span className="works__isSuccess-icon flex justify-center mt-3">
             <i className="bi bi-emoji-smile"></i>

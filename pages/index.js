@@ -1,18 +1,23 @@
 /** @format */
+import Typed from "react-typed";
 import Link from "next/link";
 import SimpleBar from "simplebar-react";
 
 const Home = () => {
+  const textLines = ["I'm Tohir Bobojonov", "I'm a Frontend-developer"];
+
   return (
     <SimpleBar className="home bg-blue-600 w-full h-full rounded-2xl flex items-center shadow-md shadow-gray-400">
-      <div className="home__someInfos w-9/12 mr-auto ml-auto">
+      <div className="home__someInfos w-full mr-auto ml-auto lg:pl-24">
         <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white text-center lg:text-left">
-          {"I'm Tohir Bobojonov"}
+          <Typed
+            strings={["Welcome!", "My portfolio"]}
+            typeSpeed={400}
+            loop={true}
+          />
         </h3>
         <p className="mt-5 text-white font-normal text-center text-xs sm:text-base lg:text-left">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, quod.
-          Atque vitae, quidem odio temporibus fuga suscipit veniam libero ex
-          repellendus ipsa. Aspernatur, dicta iure?
+          <Typed strings={textLines} typeSpeed={150} loop={true} />
         </p>
         <div className="home__links flex justify-center lg:justify-start mt-8">
           <Link href="/works" passHref>

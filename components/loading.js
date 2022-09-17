@@ -12,7 +12,7 @@ const Loading = () => {
     const handleComplete = (url) => {
       setTimeout(() => {
         setLoading(false);
-      }, 200);
+      }, 150);
     };
 
     router.events.on("routeChangeStart", handleStart);

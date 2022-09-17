@@ -4,3 +4,14 @@
     align-items: center;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  // .simplebar-content {
+  //   display: flex;
+  //   justify-content: center;
+  // }
+
+  .simplebar-content-wrapper {
+    justify-content: center;
+  }
+}
