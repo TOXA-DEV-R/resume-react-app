@@ -4,11 +4,10 @@ import Image from "next/image";
 import React from "react";
 import SimpleBar from "simplebar-react";
 import AboutSkillsItem from "../components/about-skillsItem";
-import useDownloader from "react-use-downloader";
+
 import Link from "next/link";
 
 const About = () => {
-  const { download } = useDownloader();
   const fileUrl = "/assets/files/Bobojonov Tohir.pdf";
   const filename = "Tohir Bobojonov resume.pdf";
 
@@ -35,7 +34,7 @@ const About = () => {
               {`Hello, I'm a Frontend-developer.`}
             </h2>
             <p className="text-sx text-black opacity-40 mt-6 font-normal md:text-start text-center">
-              {`I'm`} a Frontend-developer{" "}
+              {`I'm`} a Frontend-developer
               <a
                 href="https://codeweb.uz/"
                 target="_blank"
@@ -78,15 +77,17 @@ const About = () => {
               </p>
             </div>
             <div className="about__getInfos flex flex-col items-center sm:flex-row justify-center md:justify-start md:items-start  mt-5">
-              <button
+              <a
+                href={fileUrl}
                 className="flex items-center justify-center pt-2 pb-2 pr-3 pl-3 rounded-xl border border-white text-base text-white bg-red-500 hover:bg-blue-600 hover:border-transparent transition hover:duration-300"
-                onClick={() => download(fileUrl, filename)}
+                target="_blank"
+                rel="noreferrer"
               >
                 <span className="icon mr-2">
                   <i className="bi bi-cloud-download"></i>
                 </span>
                 Download CV
-              </button>
+              </a>
               <Link href="/contact">
                 <a className="flex items-center justify-center pt-2 pb-2 pr-3 pl-3 rounded-xl border border-white text-base text-white sm:ml-3 sm:mt-0 mt-4 bg-blue-600 hover:bg-red-500 hover:border-transparent transition hover:duration-300">
                   <span className="icon mr-2">

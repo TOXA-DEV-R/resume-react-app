@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {
@@ -18,12 +18,12 @@
     "react-hook-form": "^7.35.0",
     "react-redux": "^8.0.2",
     "react-typed": "^1.2.0",
-    "react-use-downloader": "^1.1.7",
     "sass": "^1.54.9",
     "simplebar-react": "^2.4.1",
     "typed.js": "^2.0.12"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^4.23.1",
     "autoprefixer": "^10.4.9",
     "eslint": "8.23.1",
     "eslint-config-next": "12.3.0",
