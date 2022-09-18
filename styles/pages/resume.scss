@@ -1,41 +1,44 @@
 .services__timeline-entry {
-  display: grid;
-  grid-template-columns: 20% 80%;
+    display: grid;
+    grid-template-columns: 20% 80%;
 }
 
 @media screen and (max-width:767px) and (min-width:640px) {
-  .services__timeline-entry {
-    display: grid;
-    grid-template-columns: 25% 75%;
-  }
+    .services__timeline-entry {
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
 }
 
 @media screen and (max-width:639px) {
-  .services__timeline {
-    margin-top: 1rem !important;
-  }
+    .services__timeline {
+        margin-top: 1rem !important;
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 1.7rem;
+    }
 
-  .services__timeline-entry {
-    display: grid;
-    grid-template-columns: auto;
-    row-gap: 2rem;
-    height: auto !important;
+    .services__timeline-entry {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: .7rem;
+        height: auto !important;
 
-    h4 {
-      text-align: center;
+        h4 {
+            text-align: center;
 
-      &::before {
+            &::before {
+                display: none;
+            }
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .timeline-line {
         display: none;
-      }
+
     }
-
-    p {
-      text-align: center;
-    }
-  }
-
-  .timeline-line {
-    display: none;
-
-  }
 }
