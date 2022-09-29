@@ -37,7 +37,7 @@ const Resume = () => {
                 <div className="services__timeline-entry h-[6rem]">
                     <div className="border-0" ref={timelineFirstRef}>
                         <h4 className="text-base font-normal text-gray-400 relative before:z-30 before:absolute before:top-[50%] before:border-2 before:border-red-500 before:right-0 before:translate-y-[-50%] before:w-[10px] before:h-[10px] before:rounded-full before:bg-white">
-                            2014 - 2017
+                            2013 - 2017
                         </h4>
                     </div>
                     <div className="xl:pl-12 xl:pr-12 lg:pl-9 lg:pr-9 border-0 pl-8 pr-4">
