@@ -42,7 +42,7 @@ const Resume = () => {
                     </div>
                     <div className="xl:pl-12 xl:pr-12 lg:pl-9 lg:pr-9 border-0 pl-8 pr-4">
                         <h4 className="text-black font-bold text-xl">
-                            Bachelor
+                            Bachelor : Computer science
                         </h4>
                         <p className="mt-1 font-normal text-gray-400 text-lg">
                             Ontustik Kazakhstan Pedagogical University
