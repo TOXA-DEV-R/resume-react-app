@@ -8,7 +8,7 @@ import AboutSkillsItem from "../components/about-skillsItem";
 import Link from "next/link";
 
 const About = () => {
-    const fileUrl = "/assets/files/Bobojonov Tohir.pdf";
+    const fileUrl = "/assets/files/Tohir Bobojonov.pdf";
     const filename = "Tohir Bobojonov resume.pdf";
 
     return (
