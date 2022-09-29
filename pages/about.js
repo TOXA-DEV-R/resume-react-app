@@ -9,7 +9,6 @@ import Link from "next/link";
 
 const About = () => {
     const fileUrl = "/assets/files/Tohir Bobojonov.pdf";
-    const filename = "Tohir Bobojonov resume.pdf";
 
     return (
         <SimpleBar className="w-full h-full rounded-2xl about shadow-md shadow-gray-400 pt-12 pb-12 pl-3 pr-3 sm:pl-5 sm:pr-8 lg:pl-10 lg:pr-10 overflow-scroll overflow-x-hidden">
@@ -34,7 +33,17 @@ const About = () => {
                             {`Hello, I'm a Frontend-developer.`}
                         </h2>
                         <p className="text-sx text-black opacity-40 mt-6 font-normal md:text-start text-center">
-                            {`I'm`} a Frontend-developer{" "}
+                            I graduated from ALICODE and Codeweb Academy, I can
+                            work with HTML5, CSS, Sass, JavaScript, React.js,
+                            Vue.js, TypeScript, JSX, Rest API. My profession is
+                            making custom websites. I know English language at
+                            an intermediate level and a little Russian language
+                            . My native language is Uzbek. I have presentation
+                            skills. Sociable with people and respectful, I learn
+                            new things very quickly. I am ready to develop and
+                            gain skills in the course of work and according to
+                            the requirements of the employer. I have been
+                            working as a Frontend-developer at{" "}
                             <a
                                 href="https://codeweb.uz/"
                                 target="_blank"
@@ -42,14 +51,10 @@ const About = () => {
                                 className="underline"
                             >
                                 Codeweb
-                            </a>
-                            . I have more than 7 month Of Experience. I am
-                            passionate about building excellent software that
-                            improves the lives of those around me. I specialize
-                            in creating web application for clients ranging from
-                            individuals and small-businesses. What would you do
-                            if you had a Frontend-developer expert available at
-                            your fingertips?
+                            </a>{" "}
+                            since January 2022. I really like to work on myself
+                            and study. I’m currently learning Dart and Flutter .
+                            Ready for any requirements and salaries.
                         </p>
                         <div className="about__infos mt-6 grid grid-cols-1 xl:grid-cols-2 gap-2 xl:gap-0">
                             <p className="md:text-start text-center">
