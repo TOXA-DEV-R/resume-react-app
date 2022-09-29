@@ -43,7 +43,7 @@ const About = () => {
                             >
                                 Codeweb
                             </a>
-                            . I have more than 3 month Of Experience. I am
+                            . I have more than 7 month Of Experience. I am
                             passionate about building excellent software that
                             improves the lives of those around me. I specialize
                             in creating web application for clients ranging from
