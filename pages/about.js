@@ -157,18 +157,6 @@ const About = () => {
                         widthImage={65}
                         heightImage={35}
                     ></AboutSkillsItem>
-                    <AboutSkillsItem
-                        title="Dart"
-                        imgSrc="/assets/icon/dart.svg"
-                        widthImage={36}
-                        heightImage={36}
-                    ></AboutSkillsItem>
-                    <AboutSkillsItem
-                        title="Flutter"
-                        imgSrc="/assets/icon/icons8-flutter.svg"
-                        widthImage={36}
-                        heightImage={30}
-                    ></AboutSkillsItem>
                 </div>
             </div>
         </SimpleBar>

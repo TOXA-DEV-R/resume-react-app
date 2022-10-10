@@ -1,127 +1,132 @@
 .header {
-  .navbar-section {
-    scrollbar-width: 0;
+    .navbar-section {
+        scrollbar-width: 0;
 
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-
-  .simplebar-track {
-    background-color: rgba(255, 255, 255, 0.479);
-    border-radius: 10px;
-    height: 90%;
-    top: 5% !important;
-    translate: -10px;
-
-  }
-
-  .simplebar-scrollbar {
-    cursor: pointer;
-
-    &::before {
-      cursor: pointer;
-      opacity: 0.8;
-      background: white !important;
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
-    &:hover {
-      &::before {
-        opacity: 1 !important;
-      }
+    .simplebar-track {
+        background-color: rgba(255, 255, 255, 0.479);
+        border-radius: 10px;
+        height: 90%;
+        top: 5% !important;
+        translate: -10px;
+
     }
 
-  }
+    .simplebar-scrollbar {
+        cursor: pointer;
+
+        &::before {
+            cursor: pointer;
+            opacity: 0.8;
+            background: white !important;
+        }
+
+        &:hover {
+            &::before {
+                opacity: 1 !important;
+            }
+        }
+
+    }
 }
 
 .navbar__socialmedia-link {
-  display: inline-flex;
-  position: relative;
-  transition: all 300ms ease-in-out;
-
-  .bi {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 0.9rem;
-    color: white;
     transition: all 300ms ease-in-out;
-  }
 
-  &:hover {
-    background-color: white;
+    a {
+        width: 100%;
+        height: 100%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .bi {
-      color: black;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9rem;
+        color: white;
+        transition: all 300ms ease-in-out;
     }
-  }
+
+    &:hover {
+        background-color: white;
+
+        .bi {
+            color: black;
+        }
+    }
 }
 
 .navbar__item {
-  width: 100%;
+    width: 100%;
 
-  a {
-    padding-left: 1.25rem;
-    position: relative;
+    a {
+        padding-left: 1.25rem;
+        position: relative;
 
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 2px;
-      height: 100%;
-      background-color: transparent;
-      transition: all 400ms ease-in-out;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background-color: transparent;
+            transition: all 400ms ease-in-out;
+        }
+
+        &:hover,
+        &.active {
+            &::after {
+                background-color: red;
+            }
+        }
     }
 
-    &:hover,
-    &.active {
-      &::after {
-        background-color: red;
-      }
+
+    .bi {
+        color: white;
     }
-  }
-
-
-  .bi {
-    color: white;
-  }
 }
 
 .header__close {
-  .bi {
-    font-size: 20px;
-  }
+    .bi {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 1023px) {
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translateX(-16rem);
-    z-index: 999;
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-16rem);
+        z-index: 999;
 
-    &.show-header {
-      transform: translateX(0);
-      background-color: rgba(255, 255, 255, 0.678);
+        &.show-header {
+            transform: translateX(0);
+            background-color: rgba(255, 255, 255, 0.678);
+        }
     }
-  }
 }
 
 @media (max-width: 390px) {
-  .home__links {
-    flex-direction: column;
-    align-items: center;
+    .home__links {
+        flex-direction: column;
+        align-items: center;
 
-    .home__link {
-      margin-left: 0;
+        .home__link {
+            margin-left: 0;
 
-      &:last-of-type {
-        margin-top: 1rem;
-      }
+            &:last-of-type {
+                margin-top: 1rem;
+            }
+        }
     }
-  }
 }
