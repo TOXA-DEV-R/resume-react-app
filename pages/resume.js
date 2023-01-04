@@ -4,13 +4,12 @@ import { useEffect } from "react";
 import { useRef } from "react";
 import SimpleBar from "simplebar-react";
 
-const Resume = () => {
+function Resume() {
     const timelineLineRef = useRef(null);
     const timelineFirstRef = useRef(null);
 
     const timelineLineControl = () => {
         // console.log(timelineLineRef.current.offsetLeft);
-
         timelineLineRef.current.style.left = `${
             timelineFirstRef.current.clientWidth - 5
         }px`;
@@ -27,7 +26,9 @@ const Resume = () => {
     useEffect(() => {
         timelineLineControl();
     }, []);
-
+    // const dateOptions = { month: "long", day: "numeric", year: "numeric" };
+    // const dateString = new Date().toLocaleDateString("en-US", dateOptions);
+    // console.log(dateString);
     return (
         <SimpleBar className="w-full h-full rounded-2xl services shadow-md shadow-gray-400 pt-12 pb-12 pl-3 pr-3 sm:pl-5 sm:pr-8 lg:pl-10 lg:pr-10 overflow-scroll overflow-x-hidden">
             <h2 className="text-2xl font-medium title services__title">
@@ -67,7 +68,23 @@ const Resume = () => {
                 <div className="services__timeline-entry h-[6rem]">
                     <div className="border-0">
                         <h4 className="text-base font-normal text-gray-400 relative before:z-30 before:absolute before:top-[50%] before:border-2 before:border-red-500 before:right-0 before:translate-y-[-50%] before:w-[10px] before:h-[10px] before:rounded-full before:bg-white">
-                            2022 - Present
+                            2022 - 9/1/2022
+                        </h4>
+                    </div>
+                    <div className="xl:pl-12 xl:pr-12 lg:pl-9 lg:pr-9 border-0 pl-8 pr-4">
+                        <h4 className="text-black font-bold text-xl">
+                            Frontend-developer
+                        </h4>
+                        <p className="mt-1 font-normal text-gray-400 text-lg">
+                            I worked as a Frontend-developer in the Codeweb for
+                            six month
+                        </p>
+                    </div>
+                </div>
+                <div className="services__timeline-entry h-[6rem]">
+                    <div className="border-0">
+                        <h4 className="text-base font-normal text-gray-400 relative before:z-30 before:absolute before:top-[50%] before:border-2 before:border-red-500 before:right-0 before:translate-y-[-50%] before:w-[10px] before:h-[10px] before:rounded-full before:bg-white">
+                            9/1/2022 - Present
                         </h4>
                     </div>
                     <div className="xl:pl-12 xl:pr-12 lg:pl-9 lg:pr-9 border-0 pl-8 pr-4">
@@ -76,7 +93,7 @@ const Resume = () => {
                         </h4>
                         <p className="mt-1 font-normal text-gray-400 text-lg">
                             I have been working as a Frontend-developer in the
-                            Codeweb since January
+                            Adson since October 2022
                         </p>
                     </div>
                 </div>
@@ -87,6 +104,6 @@ const Resume = () => {
             </div>
         </SimpleBar>
     );
-};
+}
 
 export default Resume;

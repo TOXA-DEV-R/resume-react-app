@@ -7,7 +7,7 @@ import "../styles/globals.css";
 import "../styles/index.scss";
 import store from "../store";
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
     return (
         <Provider store={store}>
             <Layout>
@@ -22,10 +22,6 @@ function MyApp({ Component, pageProps }) {
                             type: "image/png",
                             href: "/icon-web.png",
                         },
-                        {
-                            rel: "stylesheet",
-                            href: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css",
-                        },
                     ]}
                 />
                 <Component {...pageProps} />
@@ -34,4 +30,4 @@ function MyApp({ Component, pageProps }) {
     );
 }
 
-export default MyApp;
+export default App;

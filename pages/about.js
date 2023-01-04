@@ -7,7 +7,7 @@ import AboutSkillsItem from "../components/about-skillsItem";
 
 import Link from "next/link";
 
-const About = () => {
+function About() {
     const fileUrl = "/assets/files/Tohir Bobojonov.pdf";
 
     return (
@@ -45,14 +45,14 @@ const About = () => {
                             the requirements of the employer. I have been
                             working as a Frontend-developer at{" "}
                             <a
-                                href="https://codeweb.uz/"
+                                href="https://www.adson.uz/"
                                 target="_blank"
                                 rel="noreferrer"
                                 className="underline"
                             >
-                                Codeweb
+                                Adson
                             </a>{" "}
-                            since January 2022. I really like to work on myself
+                            since October 2022. I really like to work on myself
                             and study. I’m currently learning Dart and Flutter .
                             Ready for any requirements and salaries.
                         </p>
@@ -161,6 +161,6 @@ const About = () => {
             </div>
         </SimpleBar>
     );
-};
+}
 
 export default About;

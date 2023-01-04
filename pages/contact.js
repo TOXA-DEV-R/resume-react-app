@@ -4,7 +4,7 @@ import React from "react";
 import SimpleBar from "simplebar-react";
 import { useForm } from "react-hook-form";
 
-const Contact = () => {
+function Contact() {
     const {
         register,
         handleSubmit,
@@ -139,6 +139,6 @@ const Contact = () => {
             </div>
         </SimpleBar>
     );
-};
+}
 
 export default Contact;
