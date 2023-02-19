@@ -77,4 +77,20 @@ export const worksData = [
         link: "https://quiz-app-for-someone.netlify.app/",
         content: "web-application",
     },
+    {
+        title: "Rikki",
+        text: "Website for work etc..",
+        id: 6,
+        imageSrc: "/assets/images/rikki.png",
+        link: "https://www.rikki.uz/",
+        content: "website",
+    },
+    {
+        title: "Bonny",
+        text: "Website for work etc..",
+        id: 7,
+        imageSrc: "/assets/images/bonny.png",
+        link: "https://www.bonny.uz/",
+        content: "website",
+    },
 ];
