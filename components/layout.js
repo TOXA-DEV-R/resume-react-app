@@ -8,9 +8,13 @@ import { useEffect } from "react";
 import { useRef } from "react";
 import { useRouter } from "next/router";
 import Loading from "./loading";
+import GlobalLoading from "./globalLoading";
 
 const Layout = ({ children }) => {
     const router = useRouter();
+
+    // loader
+    const [loader, setLoading] = useState(false);
 
     const nextWrapRef = useRef(null);
     const mainRef = useRef(null);
@@ -61,13 +65,12 @@ const Layout = ({ children }) => {
 
     return (
         <>
+            <GlobalLoading />
             <div
                 className="bg-white flex flex-col lg:flex-row lg:justify-center lg:items-center w-screen h-screen relative next-wrap"
                 ref={nextWrapRef}
             >
-                <Suspense fallback={<Loading />}>
-                    <Navbar />
-                </Suspense>
+                <Navbar />
                 <Mobile />
                 <main
                     className="w-full lg:max-w-[79.688rem] lg:max-h-[38.75rem] h-full pt-4 pb-4 pr-2 pl-2 lg:pl-6 relative"
