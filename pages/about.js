@@ -53,8 +53,8 @@ function About() {
                                 Adson
                             </a>{" "}
                             since October 2022. I really like to work on myself
-                            and study. I’m currently learning Dart and Flutter .
-                            Ready for any requirements and salaries.
+                            and study. I’m currently learning Backend. Ready for
+                            any requirements and salaries.
                         </p>
                         <div className="about__infos mt-6 grid grid-cols-1 xl:grid-cols-2 gap-2 xl:gap-0">
                             <p className="md:text-start text-center">
