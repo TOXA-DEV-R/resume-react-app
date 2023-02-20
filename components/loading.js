@@ -27,8 +27,21 @@ const Loading = () => {
     });
 
     return loading ? (
-        <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-white z-30">
-            <div className="loader">Loading...</div>
+        <div className="absolute inset-0 flex justify-center items-center bg-white z-30">
+            <div className="lds-spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     ) : (
         <div></div>

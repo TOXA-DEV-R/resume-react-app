@@ -14,8 +14,21 @@ const GlobalLoading = () => {
     }, []);
 
     return loading ? (
-        <div className="fixed top-0 left-0 inset-0 flex justify-center items-center bg-white z-30">
-            <div className="loader">Loading...</div>
+        <div className="fixed w-full inset-0 z-[9999] bg-white flex justify-center items-center">
+            <div className="lds-spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     ) : null;
 };
